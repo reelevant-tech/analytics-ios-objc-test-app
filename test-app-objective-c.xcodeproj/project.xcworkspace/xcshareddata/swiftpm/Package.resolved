@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ReelevantAnalytics",
+        "repositoryURL": "https://github.com/reelevant-tech/analytics-ios",
+        "state": {
+          "branch": "main",
+          "revision": "9b7aa38fc77eba00994f421fe85779f75b1e28b8",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

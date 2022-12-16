@@ -14,6 +14,7 @@
 		A72782C0291BFA7A008762A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72782BF291BFA7A008762A1 /* Assets.xcassets */; };
 		A72782C3291BFA7A008762A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72782C1291BFA7A008762A1 /* LaunchScreen.storyboard */; };
 		A72782C6291BFA7A008762A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A72782C5291BFA7A008762A1 /* main.m */; };
+		A72782CE291BFD2E008762A1 /* ReelevantAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A72782CD291BFD2E008762A1 /* ReelevantAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72782CE291BFD2E008762A1 /* ReelevantAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +94,9 @@
 			dependencies = (
 			);
 			name = "test-app-objective-c";
+			packageProductDependencies = (
+				A72782CD291BFD2E008762A1 /* ReelevantAnalytics */,
+			);
 			productName = "test-app-objective-c";
 			productReference = A72782B0291BFA78008762A1 /* test-app-objective-c.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = A72782A7291BFA78008762A1;
+			packageReferences = (
+				A72782CC291BFD2E008762A1 /* XCRemoteSwiftPackageReference "analytics-ios" */,
+			);
 			productRefGroup = A72782B1291BFA78008762A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A72782CC291BFD2E008762A1 /* XCRemoteSwiftPackageReference "analytics-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/reelevant-tech/analytics-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A72782CD291BFD2E008762A1 /* ReelevantAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A72782CC291BFD2E008762A1 /* XCRemoteSwiftPackageReference "analytics-ios" */;
+			productName = ReelevantAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A72782A8291BFA78008762A1 /* Project object */;
 }
